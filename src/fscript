@@ -1,0 +1,1 @@
+gfortran -o an types.f90 potcalc.f90 potocs.f90 interpol.f90 cuadratura.f90 aniso.f90

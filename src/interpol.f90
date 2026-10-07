@@ -54,8 +54,11 @@ lineath = 1 - nint(500._rk*(th0-1._rk))
    do j = 2, nColumna
        vl(j-1) = vlam(linear,j) + ((r0-r1)/(r2-r1))*(vlam(linear+1,j) - vlam(linear,j))
        !Multiplica los terminos Vlam por individual, empezando desde la columna 2 = lam0, j=2=lam0 
+       !if( j == 3) then
+       !    vl(j-1) = vl(j-1)*1._rk
+       !end if
        !if( j == 4) then
-       !    vl(j-1) = vl(j-1)/2._rk
+       !    vl(j-1) = vl(j-1)*1._rk
        !end if
        !write(*,*) vl(j-1)
    end do !j = 2, nColumna
